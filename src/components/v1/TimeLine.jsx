@@ -16,7 +16,7 @@ export function TimeLine() {
             pr={'2'}
           />
           <TimeLineItem
-            duration="Jan'23 - Mar'23"
+            duration="June'22 - June'23"
             title="Harman Connected Services"
             role="Associate Engineer"
             description={`Implemented RESTful APIs, enhancing the backend performance and
