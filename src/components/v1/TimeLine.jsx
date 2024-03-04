@@ -4,7 +4,7 @@ export function TimeLine() {
   return (
     <div className="grid grid-cols-2 mt-10">
       <div className="col-span-1" dir="rtl">
-        <ol className="h-[51rem] relative border-r-[1px] border-green dark:border-gray-700">
+        <ol className="h-[51rem] relative border-r-[1px] border-green dark:border-cyan">
           <TimeLineItem
             duration="Jan'23 - Mar'23"
             title="InstaClone (POC)"
@@ -31,7 +31,7 @@ export function TimeLine() {
         </ol>
       </div>
       <div className="col-span-1">
-        <ol className="h-[51rem] relative border-l-[1.50px] border-green dark:border-gray-700">
+        <ol className="h-[51rem] relative border-l-[1.50px] border-green dark:border-cyan">
           <TimeLineItem
             duration="June'23 - Current"
             title="Harman Connected Services"

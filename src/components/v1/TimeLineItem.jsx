@@ -16,8 +16,8 @@ export function TimeLineItem({
         paddingRight: pr ? `${pr}rem` : 0,
       }}
     >
-      <div className="absolute w-[0.60rem] h-[0.60rem] bg-green rounded-full -start-[0.340rem] dark:bg-green"></div>
-      <time className="mb-1 font-bold text-sm tracking-wider text-green dark:text-gray-500">
+      <div className="absolute w-[0.60rem] h-[0.60rem] bg-green rounded-full -start-[0.340rem] dark:bg-cyan"></div>
+      <time className="mb-1 font-bold text-sm tracking-wider text-green dark:text-cyan">
         {duration}
       </time>
       <div className="text-[0.80rem] mt-1 uppercase text-white dark:text-white">

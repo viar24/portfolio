@@ -1,6 +1,6 @@
 export function Contact() {
   return (
-    <div className="pt-10 pb-10 text-white mt-[5rem] bg-navy-blue w-[35rem] p-5">
+    <div className="pt-10 pb-10 text-white mt-[5rem] bg-navy-blue dark:bg-black-900 w-[35rem] p-5">
       <div className="flex justify-between">
         <div className="mr-1 w-[50%] p-5">
           <div className="tracking-wider">CONTACT</div>
@@ -42,7 +42,7 @@ export function Contact() {
               placeholder="Message"
             />
           </div>
-          <div className="bg-green m-1 p-1 w-[96%] text-[0.7rem] flex justify-center">
+          <div className="bg-green dark:bg-cyan m-1 p-1 w-[96%] text-[0.7rem] flex justify-center">
             Send
           </div>
         </div>

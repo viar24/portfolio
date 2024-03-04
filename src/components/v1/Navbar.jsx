@@ -12,7 +12,7 @@ export function Navbar() {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full dark:bg-black-900">
       <div>
         <div className="text-[0.55rem] pt-2 pb-2 w-full">
           <div className="flex justify-center shadow-md p-2 pb-3">

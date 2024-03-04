@@ -5,7 +5,7 @@ export function Resume() {
   const [downloading, setDownloading] = useState(false);
 
   return (
-    <div className="mt-[5rem] flex justify-center bg-navy-blue w-[35rem] pl-[7rem] pr-[7rem] pt-[2rem] pb-[5rem]">
+    <div className="mt-[5rem] flex justify-center bg-navy-blue dark:bg-black-900 w-[35rem] pl-[7rem] pr-[7rem] pt-[2rem] pb-[5rem]">
       <div>
         <div className="text-center pl-2 pr-2 p-8">
           <SRLogo fontsize={2} />
@@ -27,7 +27,7 @@ export function Resume() {
                 setDownloading(false);
               }, 1000);
             }}
-            className="cursor-pointer border-[1px] border-solid border-green text-white hover:bg-green active:bg-transparent text-[0.6rem] inline-block p-2 pr-8 pl-8"
+            className="cursor-pointer border-[1px] border-solid border-green dark:border-cyan text-white hover:bg-green dark:hover:bg-cyan active:bg-transparent text-[0.6rem] inline-block p-2 pr-8 pl-8"
           >
             {downloading ? (
               <div className="flex">

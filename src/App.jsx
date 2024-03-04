@@ -9,13 +9,24 @@ import { Professional } from './components/v1/Professional';
 import { Experience } from './components/v1/Experience';
 import { Contact } from './components/v1/Contact';
 import { Footer } from './components/v1/Footer';
+import { useCallback, useState } from 'react';
+import tailwindConfig from '../tailwind.config';
+import resolveConfig from 'tailwindcss/resolveConfig';
+import ThemeButton from './components/v1/ThemeButton';
+
+const twFullConfig = resolveConfig(tailwindConfig);
 
 function App() {
+  const [darkTheme, setDarkTheme] = useState(false);
+
+  const theme = useCallback(() => getTheme(darkTheme), [darkTheme]);
+
   return (
-    <div className="bg-grey w-full flex justify-center ">
+    <div className="w-full flex justify-center" style={theme()}>
       <BrowserRouter>
         <RecoilRoot>
           <div className="w-full">
+            <ThemeButton setDarkTheme={setDarkTheme} />
             <Navbar id="navbar"></Navbar>
             <div className="container mx-auto">
               <Routes>
@@ -52,4 +63,17 @@ function Main() {
       </Card>
     </div>
   );
+}
+
+function getTheme(darkTheme) {
+  if (darkTheme) {
+    document.documentElement.classList.add('dark');
+    return { background: 'black', color: twFullConfig.theme.colors['cyan'] };
+  } else {
+    document.documentElement.classList.remove('dark');
+    return {
+      background: twFullConfig.theme.colors['grey'],
+      color: twFullConfig.theme.colors['green'],
+    };
+  }
 }

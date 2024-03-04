@@ -2,13 +2,13 @@ import { SRLogo } from '../../assets/imgs/sr-logo';
 
 export function Footer() {
   return (
-    <div className="mt-[6rem]  bg-navy-blue p-5 text-gray text-[0.6rem] flex justify-around">
+    <div className="mt-[6rem] bg-navy-blue dark:bg-black-900 p-5 text-gray text-[0.6rem] flex justify-around">
       <div className="w-[30rem] flex justify-center">
         <SRLogo fontsize={1} />
 
         <div className="ml-[3rem] flex justify-center mt-1">
           Made with{' '}
-          <div className="text-green pl-1 pr-1">
+          <div className="text-green dark:text-cyan pl-1 pr-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
