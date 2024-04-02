@@ -1,3 +1,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+  @keyframes bounceX {
+    0% {
+      transform: rotate(-30deg);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: rotate(30deg);
+      animation-timing-function: cubic-bezier(0, 0, 1, 1);
+    }
+    100% {
+      transform: rotate(-30deg);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+  }
+
+  .animate-bounceX {
+    animation: bounceX 2s infinite;
+  }
+
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(100%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    100% {
+      transform: translateX(0);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+  }
+
+  .animate-slideLeft {
+    animation: slideLeft 1s forwards;
+  }
+
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-100%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    100% {
+      transform: translateX(0%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position-x: 0%;
+    }
+    100% {
+      background-position-x: 200vw;
+    }
+  }
+
+  .animate-gradient{
+    animation: gradient 7s infinite linear;
+  }
+
+  .animate-slideRight {
+    animation: slideRight 1s forwards;
+  }
+}
+

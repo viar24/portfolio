@@ -5,13 +5,13 @@ export function Resume() {
   const [downloading, setDownloading] = useState(false);
 
   return (
-    <div className="mt-[5rem] flex justify-center bg-navy-blue dark:bg-black-900 w-[35rem] pl-[7rem] pr-[7rem] pt-[2rem] pb-[5rem]">
+    <div className="mt-[5rem] flex justify-center bg-navy-blue dark:bg-black-900 w-[90vw] md:w-[35rem] px-2 md:px-[7rem] md:pt-[2rem] py-10 md:pb-[5rem]">
       <div>
-        <div className="text-center pl-2 pr-2 p-8">
+        <div className="text-center px-2 md:p-8">
           <SRLogo fontsize={2} />
         </div>
 
-        <div className="text-white text-center text-[0.6rem] uppercase leading-5">
+        <div className="text-white text-center text-[0.6rem] md:uppercase leading-5">
           Hello! I'm Sneha Reddy, a passionate Full Stack Web Developer with a
           knack for creating efficient, scalable, and robust web applications.
           With a strong foundation in both front-end and back-end technologies,
@@ -19,7 +19,7 @@ export function Resume() {
           user-centric experiences.{' '}
         </div>
 
-        <div className="text-center mt-8">
+        <div className="text-center mt-4 md:mt-8">
           <div
             onClick={() => {
               setDownloading(true);

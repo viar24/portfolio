@@ -3,7 +3,7 @@ import React from 'react';
 const ThemeButton = ({ setDarkTheme }) => {
   return (
     <button
-      className="fixed sm:top-5 sm:end-24"
+      className="fixed top-14 end-1 md:end-24 md:top-5"
       onClick={() => setDarkTheme((d) => !d)}
     >
       <svg

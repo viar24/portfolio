@@ -17,22 +17,20 @@ import ThemeButton from './components/v1/ThemeButton';
 const twFullConfig = resolveConfig(tailwindConfig);
 
 function App() {
-  const [darkTheme, setDarkTheme] = useState(false);
+  const [darkTheme, setDarkTheme] = useState(true);
 
   const theme = useCallback(() => getTheme(darkTheme), [darkTheme]);
 
   return (
-    <div className="w-full flex justify-center" style={theme()}>
+    <div style={theme()}>
       <BrowserRouter>
         <RecoilRoot>
-          <div className="w-full">
-            <ThemeButton setDarkTheme={setDarkTheme} />
-            <Navbar id="navbar"></Navbar>
-            <div className="container mx-auto">
-              <Routes>
-                <Route path="/" element={<Main />}></Route>
-              </Routes>
-            </div>
+          <ThemeButton setDarkTheme={setDarkTheme} />
+          <Navbar id="navbar"></Navbar>
+          <div className="container mx-auto">
+            <Routes>
+              <Route path="/" element={<Main />}></Route>
+            </Routes>
             <Footer />
           </div>
         </RecoilRoot>
